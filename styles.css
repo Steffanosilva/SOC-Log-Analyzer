@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Global & Typography */
+body {
+    font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace;
+    background-color: #020617;
+}
+
+.font-mono {
+    font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace !important;
+}
+
+.tracking-wide { letter-spacing: 0.05em; }
+.tracking-widest { letter-spacing: 0.15em; }
+
+/* Paleta de Cores Táticas */
+.text-cyan-glow { color: #06b6d4; }
+.border-cyan-glow { border-color: rgba(6, 182, 212, 0.3) !important; }
+
+/* Grid de Fundo */
+.cyber-grid {
+    background-image: 
+        linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(2, 6, 23, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.max-w-800 { max-width: 800px; }
+
+/* Botões Customizados */
+.btn-outline-cyan {
+    color: #06b6d4;
+    border-color: #06b6d4;
+    background-color: rgba(6, 182, 212, 0.05);
+}
+
+.btn-outline-cyan:hover {
+    color: #020617;
+    background-color: #06b6d4;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+}
+
+.hover-glow:hover {
+    border-color: rgba(6, 182, 212, 0.5) !important;
+    box-shadow: inset 0 0 10px rgba(6, 182, 212, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Brilhos e Animações */
+.text-glow { text-shadow: 0 0 8px rgba(6, 182, 212, 0.8); }
+.text-glow-danger { text-shadow: 0 0 8px rgba(220, 53, 69, 0.8); }
+.drop-shadow-cyan { filter: drop-shadow(0 0 8px rgba(6,182,212,0.8)); }
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .5; }
+}
+
+.radar-spin { animation: slow-spin 8s linear infinite; }
+@keyframes slow-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Drag Active State for App.js */
+.drag-active {
+    border-color: #06b6d4 !important;
+    background-color: rgba(6, 182, 212, 0.1) !important;
+    box-shadow: inset 0 0 20px rgba(6, 182, 212, 0.2);
+}
+.cursor-pointer { cursor: pointer; }
+.transition-all { transition: all 0.3s ease; }
+.pointer-events-none { pointer-events: none; }
+
+/* Bootstrap Table Overrides para o Modo Escuro */
+.table-dark {
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: rgba(6, 182, 212, 0.05);
+}
+.table td { border-bottom: 1px solid rgba(6, 182, 212, 0.1); }
+
+/* Badges geradas pelo app.js */
+.badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+}
+.badge-sqli { background: rgba(220, 53, 69, 0.2); color: #ff6b6b; border: 1px solid #dc3545; }
+.badge-xss { background: rgba(255, 193, 7, 0.2); color: #ffd166; border: 1px solid #ffc107; }
+.badge-lfi { background: rgba(111, 66, 193, 0.2); color: #b794f4; border: 1px solid #6f42c1; }
+.badge-brute { background: rgba(13, 202, 240, 0.2); color: #48cae4; border: 1px solid #0dcaf0; }
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.5); }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(6, 182, 212, 0.5); }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
