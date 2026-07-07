@@ -34,11 +34,11 @@ Como a aplicação é estritamente Client-Side, não há necessidade de containe
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/soc-triage-client.git](https://github.com/SEU_USUARIO/soc-triage-client.git)
+   git clone https://github.com/Steffanosilva/SOC-Log-Analyzer.git
 
 2. Entre no link abaixo diretamente no seu navegador moderno de preferência (Chrome, Firefox, Brave, Edge ou Safari)
-
-	[]
+	```bash
+	https://soc-log-analyzer-topaz.vercel.app/
 
 3. Utilize o arquivo **mock_attack.log** ou **financial_server_access.log** incluso na raiz do projeto, que contém simulações de tráfego legítimo mesclado com injeções maliciosas e tráfego de scanners. Arraste-o para a zona de upload.
 
